@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family:'Times New Roman', Times, serif;
+    padding: 20px;
+    background-color: burlywood;
+    text-align: center; /* Centers all text inside body */
+}
+
+/* Centering the Form */
+form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    width: 300px;
+    margin: 0 auto 20px auto; /* Centers the form */
+    text-align: center; /* Aligns text inside the form */
+}
+
+/* Input & Button Styling */
+input, button {
+    padding: 8px;
+    margin: 8px 0;
+    align-items: center;
+}
+
+button {
+    width: 170px;
+    background: rgb(128, 66, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Centering the Table */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.812);
+    margin: auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Delete Button */
+button.delete {
+    background: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+}
+
+/* Form Structure Styling */
+.csform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Uniform Input Fields */
+.csuser {
+    width: 150px;
+    border: 2px solid #333;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* Display Box */
+.csdisplay {
+    width: 200px;
+    padding: 10px;
+}
+
+/* Label Styling */
+label {
+    margin-bottom: 12px;
+    display: block;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Stationery Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>STATIONARY MANAGEMENT SYSTEM</h2>
+        <form id="loginForm" class="csform">
+            <label for="username">Username:</label>
+            <input class="csuser" type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input class= "csuser" type="password" id="password" required>
+
+            <button type="button">login</button>
+
+        </form>
+        <p id="error-message"></p>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("button").addEventListener("click", function () {
+        // Get user input
+        let username = document.getElementById("username").value.trim();
+        let password = document.getElementById("password").value.trim();
+        let errorMessage = document.getElementById("error-message");
+
+        // Predefined credentials
+        const validUsername = "admin";
+        const validPassword = "1234";
+
+        // Check credentials
+        if (username === validUsername && password === validPassword) {
+            alert("Login successful! Redirecting to dashboard...");
+            window.location.href = "add_stationary.html"; // Redirect to dashboard
+        } else {
+            errorMessage.textContent = "Invalid username or password. Try again!";
+            errorMessage.style.color = "red";
+        }
+    });
+});
+
+    </script>
+
